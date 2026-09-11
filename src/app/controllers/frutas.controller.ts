@@ -43,4 +43,14 @@ export class FrutasController{
         return res.status(500).json({message: "Erro interno, tente novamete"})
     }
     }
+
+    updateById = async(req: Request, res: Response)=>{
+        try{
+            const {id} = Number(req.params.id);
+            
+
+        }catch(error){
+
+        }
+    }
 }

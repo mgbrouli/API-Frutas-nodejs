@@ -3,12 +3,13 @@ import consign from 'consign'
 import http from 'http'
 import cors from 'cors'
 
+import {frutaRouter} from './src/app/routes/fruta.router'
 
 const app = express()
 const server = http.createServer(app)
 
 app.use(express.json())
-app.use(express.Router());
+app.use('/', frutaRouter);
 app.use(cors())
 
 consign()
