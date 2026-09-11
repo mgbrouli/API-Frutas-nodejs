@@ -1,7 +1,8 @@
-const express = require("express")
-const consign =require("consign")
-const http = require('http')
-const cors = require('cors')
+import express from 'express'
+import consign from 'consign'
+import http from 'http'
+import cors from 'cors'
+
 
 const app = express()
 const server = http.createServer(app)
@@ -11,9 +12,9 @@ app.use(express.Router());
 app.use(cors())
 
 consign()
-.include("db.js")
-.then("./controllers")
-.then("./routes")
+.include("./src/core")
+.then("./src/app/controllers")
+.then("./src/app/routes")
 .into(app)
 
 

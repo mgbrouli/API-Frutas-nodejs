@@ -1,4 +1,4 @@
-const {db, adicionaItem, validaItem, retornaItems, modificaItem} = require("../db")
+// const {db, adicionaItem, validaItem, retornaItems, modificaItem} = require("../db")
 
 module.exports ={
 
