@@ -8,7 +8,3 @@ frutaRouter.get('/frutas', frutaController.getAll)
 frutaRouter.post('/frutas', frutaController.create)
 frutaRouter.put('/frutas/:id', frutaController.updateById)
 
-
-//pp.get("/frutas", app.controllers.controller.get)
-
-//app.put("/frutas/:id", app.controllers.controller.put)

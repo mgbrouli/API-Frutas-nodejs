@@ -1,6 +1,6 @@
 import { frutasTable } from '../schemas/frutas.schema.js'
 import { db } from '../../core/db.js'
-import { eq, isNotNull } from 'drizzle-orm'
+import { eq } from 'drizzle-orm'
 import { AppError } from '../../core/error/AppError.js'
 
 type frutaType = typeof frutasTable.$inferInsert

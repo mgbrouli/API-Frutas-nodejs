@@ -1,5 +1,5 @@
 import type { Request, Response } from 'express';
-import { FrutasService } from '../services/fruta.service.js'
+import { FrutasService } from '../services/frutas.service.js'
 import { AppError } from '../../core/error/AppError.js';
 
 const frutaService = new FrutasService()
