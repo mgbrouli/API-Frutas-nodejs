@@ -1,15 +1,17 @@
 import express from 'express'
 import cors from 'cors'
 
-import {frutaRouter} from './src/app/routes/frutas.router.js'
+import { frutaRouter } from './src/app/routes/frutas.router.js'
+import { indexRouter } from './src/app/routes/index.router.js';
 
 export const app = express()
 
 app.use(express.json())
 app.use('/', frutaRouter);
+app.use('/', indexRouter)
 app.use(cors())
 
 
-app.listen(3000, ()=>{
+app.listen(3000, () => {
     console.log("Rodando na porta 3000")
 })
